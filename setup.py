@@ -3,12 +3,14 @@ from setuptools import setup, Extension, find_packages
 
 try:
     from Cython.Build import cythonize
+    import numpy
     extensions = cythonize([
         Extension("idr.inv_cdf", 
                   ["idr/inv_cdf.pyx", ],
                   include_dirs=[numpy.get_include()]),
     ])
 except ImportError:
+    import numpy
     extensions = [
         Extension("idr.inv_cdf", 
                   ["idr/inv_cdf.c", ],
