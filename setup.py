@@ -6,14 +6,14 @@ try:
     import numpy
     extensions = cythonize([
         Extension("idr.inv_cdf", 
-                  ["src/idr/inv_cdf.pyx", ],
+                  ["idr/inv_cdf.pyx", ],
                   include_dirs=[numpy.get_include()], compiler_directives={'language_level' : "3"}),
     ])
 except ImportError:
     import numpy
     extensions = [
         Extension("idr.inv_cdf", 
-                  ["src/idr/inv_cdf.c", ],
+                  ["idr/inv_cdf.c", ],
                   include_dirs=[numpy.get_include()]),
     ]
 
