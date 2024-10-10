@@ -20,10 +20,9 @@ except ImportError:
 def main():
     if sys.version_info.major <= 2:
         raise ValueError( "IDR requires Python version 3 or higher" )
-    import idr
     setup(
         name = "idr",
-        version = idr.__version__,
+        version = "2.0.5",
 
         author = "Nathan Boley",
         author_email = "npboley@gmail.com",
