@@ -7,7 +7,7 @@ try:
     extensions = cythonize([
         Extension("idr.inv_cdf", 
                   ["idr/inv_cdf.pyx", ],
-                  include_dirs=[numpy.get_include()]),
+                  include_dirs=[numpy.get_include()], compiler_directives={'language_level' : "3"}),
     ])
 except ImportError:
     import numpy
