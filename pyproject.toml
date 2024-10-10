@@ -6,8 +6,8 @@ requires = ["setuptools>=61.0", "wheel", "Cython", "numpy"]
 name = "idr"
 version = "2.0.5"
 requires-python = ">=3.7"
+readme = "README.md"
 dynamic = ["description", 
-            "readme", 
             "license", 
             "authors", 
             "keywords", 
