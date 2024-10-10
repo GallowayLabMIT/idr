@@ -29,6 +29,8 @@ def main():
         author_email = "npboley@gmail.com",
 
         ext_modules = extensions,     
+        
+        python_requires = ">=3.7",
 
         install_requires = [ 'scipy>=0.13.0', 'numpy'  ],
 
