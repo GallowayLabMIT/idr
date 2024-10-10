@@ -1,5 +1,4 @@
 import os, sys
-import numpy
 from setuptools import setup, Extension, find_packages
 
 try:
